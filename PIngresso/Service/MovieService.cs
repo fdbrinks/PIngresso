@@ -5,7 +5,7 @@ using PIngresso.Repository;
 
 namespace PIngresso.Service
 {
-    public class MovieService : MovieServiceBase, IService<Movie> 
+    public class MovieService : ServiceBase<Movie>, IService<Movie> 
     {
         public MovieService()
         {

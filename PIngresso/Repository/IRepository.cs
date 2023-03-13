@@ -10,5 +10,6 @@ namespace PIngresso.Repository
         T Create(T value);
         T Update(T value);
         void Delete(Guid id);
+        IQueryable<Session> FindSessions(Guid id, string date);
     }
 }

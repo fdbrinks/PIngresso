@@ -9,8 +9,9 @@ public class MovieViewModel
     public string Age { get; set; }
     public int Lenght { get; set; }
     public string Genre { get; set; }
-    public List<Session> Sessions { get; set; }
     public string ImageUrl { get; set; }
+    public List<Session> Sessions { get; set; }
+    
     
     public MovieViewModel(Guid id, string title, string age, int lenght, string genre, List<Session> sessions, string imageUrl)
     {

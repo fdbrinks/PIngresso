@@ -81,6 +81,11 @@ namespace PIngresso.Repository
                 }
             }
         }
+
+        public IQueryable<Session> FindSessions(Guid id, string date)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

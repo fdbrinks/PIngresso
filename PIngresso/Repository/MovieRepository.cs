@@ -7,7 +7,7 @@ using PIngresso.Models;
 
 namespace PIngresso.Repository
 {
-    public class MovieRepository : IMovieRepository
+    public class MovieRepository : IRepository<Movie>
     {
         public IList<Movie> GetAll()
         {
