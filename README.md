@@ -6,11 +6,17 @@ Esta é uma api para um site de cinema, responsável pelo cadastro de filmes, sa
 O código foi arquitetado seguindo o padrão MVC, o que o organiza da seguinte maneira:
 
 ### Controller
+Aqui estão as rotas e métodos da API. Esta camada se comunica com a camada do Service
 ### Service
+Aqui estão as regras de negócio da API. Esta camada se comunica com a camada do Controller e do Repository
 ### Repository
+Aqui estão as funções relacionadas ao armazenamento da API. Esta camada se comunica com a camada do Service e Database
 ### Database
+Aqui estão armazenados os dados da API. O Database se comunica com a camada do Repository
 ### View
+Aqui estão as regras que determinam o que será passado para front-end
 ### Input
+Aqui estão as regras que determinam o que será recebido pelo front-end
 
 
 ## Endpoints
