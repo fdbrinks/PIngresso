@@ -17,9 +17,9 @@ Body da Requisição:
     "id": "FilmeId",
     "title": "Título do filme",
     "age": "Classificação Indicativa do filme",
-    "lenght": Duração em minutos do filme,
+    "length": "Duração em minutos do filme",
     "genre": "Gênero do filme",
-    "imageUrl": "Url da imagem do filme"
+    "imageUrl": "Url da imagem do filme",
     "sessions": [
       {
         "date": "Dia e mês da sessão",
@@ -27,6 +27,6 @@ Body da Requisição:
         "dub": "Se a sessão é legendado ou dublado",
         "d3": "Se a sessão é 3D ou não"
       }
-    ],
+    ]
   }
 ]
