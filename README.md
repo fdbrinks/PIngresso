@@ -86,7 +86,7 @@ A seguir estão os endpoints disponíveis nesta API.
 Este endpoint retorna um array com uma lista contendo todos os filmes cadastrados. Cada filme apresentará um array contendo uma lista de sessões cadastradas com aquele filmeId.
 
 ##### Body da Requisição:
-'''
+`
 [
   {
     "id": "FilmeId",
@@ -105,7 +105,7 @@ Este endpoint retorna um array com uma lista contendo todos os filmes cadastrado
     ]
   }
 ]
-'''
+`
 
 #### Método [GET]: /Movies/{id}
 Este endpoint retorna um filme com id específico mencionado na rota da requisição. O filme apresentará um array contendo uma lista de sessões cadastradas com aquele filmeId.
