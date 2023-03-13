@@ -114,6 +114,7 @@ Este endpoint retorna um filme com id específico mencionado na rota da requisi�
 - Caso o ID mencionado na rota não pertença a nenhum filme, nenhum resultado será retornado.
 
 ##### Body da Requisição:
+```
 [
   {
     "id": "FilmeId",
@@ -132,6 +133,7 @@ Este endpoint retorna um filme com id específico mencionado na rota da requisi�
     ]
   }
 ]
+```
 
 #### Método [GET]: /Movies/{id]/find-sessions
 Este endpoint retorna um array com uma lista de sessões que contém o FilmeId mencionado na rota e possuem no atributo "date" o mesmo valor informado na query do pedido.
@@ -141,6 +143,7 @@ Este endpoint retorna um array com uma lista de sessões que contém o FilmeId m
 - Se o filme em questão não tiver nenhuma sessão cadastrada, será retornado um array vazio.
 
 ##### Body da Requisição:
+```
 [
   {
     "date": "Dia e mês da sessão",
@@ -149,6 +152,7 @@ Este endpoint retorna um array com uma lista de sessões que contém o FilmeId m
     "d3": "Se a sessão é 3D ou não"
   }
 ]
+```
 
 #### Método [POST]: /Movies
 Este endpoint recebe os parâmetros do filme que será cadastrado e depois retorna o objeto criado.
@@ -159,6 +163,7 @@ Este endpoint recebe os parâmetros do filme que será cadastrado e depois retor
 - Não é possível cadastrar um filme se todos os campos não estiverem devidamente preenchidos.
   
  ##### Body da Requisição:
+ ```
  {
     "id": "FilmeId",
     "title": "Título do filme",
@@ -167,6 +172,7 @@ Este endpoint recebe os parâmetros do filme que será cadastrado e depois retor
     "genre": "Gênero do filme",
     "imageUrl": "Url da imagem do filme",
  }
+ ```
  
  #### Método [PUT]: /Movies/{id}
  Este endpoint permite atualizar os atributos de um filme com base no ID informado na rota. Os parâmetros fornecidos serão utilizados para atualizar o objeto correspondente e após será sertornado o objeto atualizado.
@@ -176,6 +182,7 @@ Este endpoint recebe os parâmetros do filme que será cadastrado e depois retor
 - Não é possível cadastrar um filme se todos os campos não estiverem devidamente preenchidos.
 
 ##### Body da Requisição:
+```
 {
     "id": "FilmeId",
     "title": "Título do filme",
@@ -184,6 +191,7 @@ Este endpoint recebe os parâmetros do filme que será cadastrado e depois retor
     "genre": "Gênero do filme",
     "imageUrl": "Url da imagem do filme",
  }
+ ```
  
 #### Método [DELETE]: /Movies/{id}
 Este endpoint permite deletar um filme om base no ID informado na rota.
@@ -197,6 +205,7 @@ Este endpoint permite deletar um filme om base no ID informado na rota.
 Este endpoint retorna um array com uma lista contendo todas as salas cadastrados. Cada sala apresentará um array contendo uma lista de sessões cadastradas com aquele roomId.
 
 ##### Body da Requisição:
+```
 [
   {
     "id": "RoomId",
@@ -212,6 +221,7 @@ Este endpoint retorna um array com uma lista contendo todas as salas cadastrados
     ]
   }
 ]
+```
 
 #### Método [GET]: /Rooms/{id}
 Este endpoint retorna uma sala com id específico mencionado na rota da requisição. A sala apresentará um array contendo uma lista de sessões cadastradas com aquele roomId.
@@ -220,6 +230,7 @@ Este endpoint retorna uma sala com id específico mencionado na rota da requisi�
 - Caso o ID mencionado na rota não pertença a nenhuma sala, nenhum resultado será retornado.
 
 ##### Body da Requisição:
+```
 [
   {
     "id": "RoomId",
@@ -235,6 +246,7 @@ Este endpoint retorna uma sala com id específico mencionado na rota da requisi�
     ]
   }
 ]
+```
 
 #### Método [POST]: /Rooms
 Este endpoint recebe os parâmetros da sala que será cadastrada e depois retorna o objeto criado.
@@ -245,11 +257,13 @@ Este endpoint recebe os parâmetros da sala que será cadastrada e depois retorn
 - Não é possível cadastrar uma sala se todos os campos não estiverem devidamente preenchidos.
   
  ##### Body da Requisição:
+ ```
  {
     "id": "RoomId",
     "identification": "Identificação da sala",
     "screen": "Tamanho da tela da sala",
  }
+ ```
  
  #### Método [PUT]: /Rooms/{id}
  Este endpoint permite atualizar os atributos de uma sala com base no ID informado na rota. Os parâmetros fornecidos serão utilizados para atualizar o objeto correspondente e após será sertornado o objeto atualizado.
@@ -259,11 +273,13 @@ Este endpoint recebe os parâmetros da sala que será cadastrada e depois retorn
 - Não é possível cadastrar uma sala se todos os campos não estiverem devidamente preenchidos.
 
 ##### Body da Requisição:
+```
 {
     "id": "RoomId",
     "identification": "Identificação da sala",
     "screen": "Tamanho da tela da sala",
  }
+ ```
  
 #### Método [DELETE]: /Rooms/{id}
 Este endpoint permite deletar uma sala com base no ID informado na rota.
@@ -277,6 +293,7 @@ Este endpoint permite deletar uma sala com base no ID informado na rota.
 Este endpoint retorna um array com uma lista contendo todas as sessões cadastradas.
 
 ##### Body da Requisição:
+```
 [
   {
     "id": "SessionId",
@@ -300,6 +317,7 @@ Este endpoint retorna um array com uma lista contendo todas as sessões cadastra
             }
   }
 ]
+```
 
 #### Método [GET]: /Sessions/{id}
 Este endpoint retorna uma sessão com id específico mencionado na rota da requisição.
@@ -308,6 +326,7 @@ Este endpoint retorna uma sessão com id específico mencionado na rota da requi
 - Caso o ID mencionado na rota não pertença a nenhuma sessão, nenhum resultado será retornado.
 
 ##### Body da Requisição:
+```
 [
   {
     "id": "SessionId",
@@ -331,6 +350,7 @@ Este endpoint retorna uma sessão com id específico mencionado na rota da requi
             }
   }
 ]
+```
 
 #### Método [POST]: /Sessions
 Este endpoint recebe os parâmetros da sessão que será cadastrada e depois retorna o objeto criado.
@@ -341,6 +361,7 @@ Este endpoint recebe os parâmetros da sessão que será cadastrada e depois ret
 - Não é possível cadastrar uma sessão se todos os campos não estiverem devidamente preenchidos.
   
  ##### Body da Requisição:
+ ```
  {
     "id": "SessionId",
     "date": "Dia e mês da sessão",
@@ -350,6 +371,7 @@ Este endpoint recebe os parâmetros da sessão que será cadastrada e depois ret
     "movieId": "FilmeId",
     "roomID": "RoomID",
  }
+ ```
  
  #### Método [PUT]: /Sessions/{id}
  Este endpoint permite atualizar os atributos de uma sessão com base no ID informado na rota. Os parâmetros fornecidos serão utilizados para atualizar o objeto correspondente e após será sertornado o objeto atualizado.
@@ -359,6 +381,7 @@ Este endpoint recebe os parâmetros da sessão que será cadastrada e depois ret
 - Não é possível cadastrar uma sessão se todos os campos não estiverem devidamente preenchidos.
 
 ##### Body da Requisição:
+```
  {
     "id": "SessionId",
     "date": "Dia e mês da sessão",
@@ -368,6 +391,7 @@ Este endpoint recebe os parâmetros da sessão que será cadastrada e depois ret
     "movieId": "FilmeId",
     "roomID": "RoomID",
  }
+ ```
  
 #### Método [DELETE]: /Sessions/{id}
 Este endpoint permite deletar uma sessão com base no ID informado na rota.
