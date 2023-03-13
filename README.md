@@ -7,33 +7,59 @@ O código foi arquitetado seguindo o padrão MVC, o que o organiza da seguinte m
 
 ### Controller
 Aqui estão as rotas e métodos da API. Esta camada se comunica com a camada do Service.
-- MoviesController
+
+#### - MoviesController
 Rotas e métodos dos filmes.
-- RoomsController
+#### - RoomsController
 Rotas e métodos das salas.
-- SessionsController
+#### - SessionsController
 Rotas e métodos das sessões.
 
 ### Service
 Aqui estão as regras de negócio da API. Esta camada se comunica com a camada do Controller e do Repository.
-- IService
+
+#### - IService
 Serve como um contrato para todos os serviços que herdaram a classe aqui presente.
-- ServiceBase
+#### - ServiceBase
 Serve como uma base para funções genéricas que vários serviços podem herdar.
-- MovieService
+#### - MovieService
 Regras de negócio dos filmes.
-- RoomService
+#### - RoomService
 Regras de negócio das salas.
-- SessionService
+####  - SessionService
 Regras de negócio das sessões.
+
 ### Repository
 Aqui estão as funções relacionadas ao armazenamento da API. Esta camada se comunica com a camada do Service e Database.
+
+#### - IRepository
+Serve como um contrato para todos os repositórios que herdarem a classe aqui presente.
+#### - MovieRepository
+Funções de armazenamento dos filmes.
+#### - RoomRepository
+Funções de armazenamento das salas.
+#### - SessionRepository
+Funções de armazenamento das sessões.
+
 ### Database
 Aqui estão armazenados os dados da API. O Database se comunica com a camada do Repository.
+
 ### View
-Aqui estão as regras que determinam o que será passado para front-end.
+Aqui estão as regras que determinam o que será passado para o front-end.
+
+#### - MovieViewModel
+Regras de visualização dos filmes.
+#### - MovieSessionsViewModel
+Regras de visualização exclusivas para o método [GET] /movies/{id}/find-sessions
+#### - RoomViewModel
+Regras de visualização das salas.
+#### - SessionViewModel
+Regras de visualização das sessões.
+
 ### Input
 Aqui estão as regras que determinam o que será recebido pelo front-end.
+
+####
 
 
 ## Endpoints
