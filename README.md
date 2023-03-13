@@ -6,17 +6,34 @@ Esta é uma api para um site de cinema, responsável pelo cadastro de filmes, sa
 O código foi arquitetado seguindo o padrão MVC, o que o organiza da seguinte maneira:
 
 ### Controller
-Aqui estão as rotas e métodos da API. Esta camada se comunica com a camada do Service
+Aqui estão as rotas e métodos da API. Esta camada se comunica com a camada do Service.
+- MoviesController
+Rotas e métodos dos filmes.
+- RoomsController
+Rotas e métodos das salas.
+- SessionsController
+Rotas e métodos das sessões.
+
 ### Service
-Aqui estão as regras de negócio da API. Esta camada se comunica com a camada do Controller e do Repository
+Aqui estão as regras de negócio da API. Esta camada se comunica com a camada do Controller e do Repository.
+- IService
+Serve como um contrato para todos os serviços que herdaram a classe aqui presente.
+- ServiceBase
+Serve como uma base para funções genéricas que vários serviços podem herdar.
+- MovieService
+Regras de negócio dos filmes.
+- RoomService
+Regras de negócio das salas.
+- SessionService
+Regras de negócio das sessões.
 ### Repository
-Aqui estão as funções relacionadas ao armazenamento da API. Esta camada se comunica com a camada do Service e Database
+Aqui estão as funções relacionadas ao armazenamento da API. Esta camada se comunica com a camada do Service e Database.
 ### Database
-Aqui estão armazenados os dados da API. O Database se comunica com a camada do Repository
+Aqui estão armazenados os dados da API. O Database se comunica com a camada do Repository.
 ### View
-Aqui estão as regras que determinam o que será passado para front-end
+Aqui estão as regras que determinam o que será passado para front-end.
 ### Input
-Aqui estão as regras que determinam o que será recebido pelo front-end
+Aqui estão as regras que determinam o que será recebido pelo front-end.
 
 
 ## Endpoints
