@@ -59,7 +59,21 @@ Regras de visualização das sessões.
 ### Input
 Aqui estão as regras que determinam o que será recebido pelo front-end.
 
-####
+#### - MovieInputModel
+Regras de input para os filmes.
+#### - MovieUpdateInputModel
+Regras de input para atualização dos filmes.
+#### - FindMovieSessionsInputModel
+Regras de input para o método [GET] /movies/{id}/find-sessions.
+#### - RoomInputModel
+Regras de input para as salas.
+#### - RoomUpdateInputModel
+Regras de input para atualização das salas.
+#### - SessionInputModel
+Regras de input para as sessões.
+#### - SessionUpdateInputModel
+Regras de input para atualização das sessões.
+
 
 
 ## Endpoints
