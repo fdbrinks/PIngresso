@@ -2,6 +2,17 @@
 
 Esta é uma api para um site de cinema, responsável pelo cadastro de filmes, salas e sessões, assim como, suas respectivas visualizações.
 
+## Estrutura da API
+O código foi arquitetado seguindo o padrão MVC, o que o organiza da seguinte maneira:
+
+### Controller
+### Service
+### Repository
+### Database
+### View
+### Input
+
+
 ## Endpoints
 
 A seguir estão os endpoints disponíveis nesta API.
